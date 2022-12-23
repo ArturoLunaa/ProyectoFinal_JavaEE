@@ -1,0 +1,349 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!--Script Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <!--Hoja de estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/estilosTenisH.css">
+    <link id="theme" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/brands.min.css">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <title>ADIDAS FORCE 1 RECYCLED</title>
+</head>
+
+<body>
+    <div id="logo" class="container-fluid ">
+        <a href="#"><img src="../img/lbr-logoRosa.png" alt="" height="150" width="150"></a>
+    </div>
+    <header class="sticky-top">
+        <!--Navigation bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-end">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" style="color: white;"
+                            href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            CATEGORÍAS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div><a class="dropdown-item" href="../hombres.html" style="color: white;">HOMBRES</a></div>
+                            <div><a class="dropdown-item" href="../mujeres.html" style="color: white;">MUJERES</a></div>
+                            <div><a class="dropdown-item" href="../niños.html" style="color: white;">NIÑOS</a></div>
+                            <div><a class="dropdown-item" href="../accesorios.html" style="color: white;">ACCESORIOS</a></div>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-center" style="color: white;"
+                            href="../contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white;" href="../sucursales.html">SUCURSALES</a>
+                    </li>
+                </ul>
+                <div>
+                  <a data-bs-toggle="modal" data-bs-target="#modal_login"><i class="fas fa-user me-2"></i></a>
+                  <a id="carrito" data-bs-toggle="modal" data-bs-target="#cart"><i class="fas fa-shopping-cart me-2"></i></a>
+                  <a id="lupa" href=""><i class="fas fa-search me-2"></i></i></a>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <section id="global">
+        <section class="container">
+            <div class="row">
+                <div id="imgTenis" class="col-lg-6 col-sm-12 mt-5">
+                    <img src="../img/af1_mujer.png" alt="" height="100%" width="100%">
+                </div>
+                <div id="textoDesc" class="col-lg-6 col-sm-12">
+                    <h2>Air Force 1 Recycled</h2>
+                    <h3>MXN $2,899</h3>
+                    <p>Este par cueenta con un alto detallado en la zona del logo y en los cortes, además su suela da un
+                        estilo increíble </p>
+                    <!--ComboBox de Talla-->
+                    <select id="talla" class="form-select d-inline-block" aria-label="Default select example">
+                        <option selected>Selecciona tu talla</option>
+                        <option value="1">23</option>
+                        <option value="1">25.5</option>
+                        <option value="1">26.6</option>
+                        <option value="2">27</option>
+                        <option value="3">27.5</option>
+                        <option value="4">28.5</option>
+                        <option value="5">29</option>
+                        <option value="6">30</option>
+                    </select>
+                    <!--ComboBox de Cantidad-->
+                    <select id="cantidad" class="form-select d-inline-block" aria-label="Default select example">
+                        <option selected>Cantidad</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Estoy de acuerdo con los términos y condiciones de LBRKICKZ
+                        </label>
+                    </div>
+                    <!--Botón-->
+                    <div class="d-grid gap-2 mt-4">
+                      <button data-nombre="Air Force 1 Recycled" data-precio="2899" 
+                      class="agregar-carrito btn btn-primary" data-bs-toggle="modal" data-bs-target="#cart">Comprar</button>
+                  </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <footer class="mt-5">
+            <div class="row">
+                <div class="col-6 col-md-4 col-sm-4">
+                    <div class="container bg-transparent">
+                        <a href="../index.html"> <img src="../img/lbr-logoRosa.png" alt="" height="150px"
+                                width="150px"></a>
+                    </div>
+                    <a href="https://www.facebook.com/LBR-KICKZ-102663987913059"><i
+                            class="fab fa-facebook-square mt-3 fa-3x"></i></a>
+                    <a href="https://www.instagram.com/lbr_kickz/"><i class="fab fa-instagram fa-3x"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square fa-3x"></i></a>
+
+                </div>
+                <div class="col-6 col-md-4 col-sm-4 ">
+                    <h5>ACERCA DE NOSOTROS</h5>
+                    <div>Información</div>
+                    <div>Noticias</div>
+                    <div>Política</div>
+                    <div>Términos y condiciones</div>
+                </div>
+                <div class="col-6 col-md-4 col-sm-4">
+                    <h5>SERVICIO AL CLIENTE</h5>
+                    <div>Preguntas frecuentes</div>
+                    <div>Fórmas de pago</div>
+                    <a id="contactoFooter" href="../contacto.html">
+                        <div>Contacto</div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Codigo de el Modal de Login -->
+    <div class="modal fade" id="modal_login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" data-backdrop="static">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <!-- Alerta que esta escondida por defecto, usamos jquery para mostrarla cuando se hace click en #iniciar -->
+                    <div class="alert alert-primary alert-dismissable" style="display: none;">
+                                Bienvenido, esta página esta en desarrollo aún
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1" class='mt-4'>Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1" class='mt-4'>Contraseña</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su Contraseña">
+                    </div>
+                    <div class="text-center">
+                    <button type="button" class="btn btn-primary mt-4" id="iniciar">Iniciar Sesión</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       <!-- Codigo de el Modal de Carrito -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comprar</h5>
+            <button type="button" class="close limpiar-carrito" data-bs-dismiss="modal" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="py-5 text-center">
+                      <img class="d-block mx-auto mb-4" src="../img/lbr-logoRosa.png" alt="" width="120" height="120">
+                      <h2>Termina tu Compra</h2>
+                      <p class='modelo-subtitulo'></p>
+                    </div>
+              
+                    <div class="row">
+                      <div class="col-md-4 order-md-2 mb-4">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                          <span class="text-muted">Tu carrito</span>
+                          <span class="badge badge-secondary badge-pill">3</span>
+                        </h4>
+                        <table class="show-cart table">
+            
+                        </table>
+                        <div class='list-group-item d-flex justify-content-between lh-condensed'>Total: <span class="total-cart"></span></div>
+                      </div>
+                      <div class="col-md-8 order-md-1">
+                        <h4 class="mb-3">Dirección de Envío</h4>
+                        <form class="needs-validation" novalidate>
+                          <div class="row">
+                            <div class="col-md-6 mb-3">
+                              <label for="firstName">Nombre</label>
+                              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                              <div class="invalid-feedback">
+                                Campo requerido
+                              </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                              <label for="lastName">Apellido</label>
+                              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                              <div class="invalid-feedback">
+                                Campo requerido
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                            <div class="invalid-feedback">
+                              Campo requerido
+                            </div>
+                          </div>
+              
+                          <div class="mb-3">
+                            <label for="address">Calle y #</label>
+                            <input type="text" class="form-control" id="address" required>
+                            <div class="invalid-feedback">
+                              Campo requerido
+                            </div>
+                          </div>
+              
+                          <div class="mb-3">
+                            <label for="address2">Colonia</label>
+                            <input type="text" class="form-control" id="address2" required>
+                          </div>
+              
+                          <div class="row">
+                            <div class="col-md-5 mb-3">
+                              <label for="country">País</label>
+                              <select class="custom-select d-block w-100 form-control" id="country" required>
+                                <option value="">Elige</option>
+                                <option>México</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                  Campo requerido
+                              </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                              <label for="state">Estado</label>
+                              <select class="custom-select d-block w-100 form-control" id="state" required>
+                                <option value="">Elige</option>
+                                <option value="Aguascalientes">Aguascalientes</option>
+                                  <option value="Baja California">Baja California</option>
+                                  <option value="Baja California Sur">Baja California Sur</option>
+                                  <option value="Campeche">Campeche</option>
+                                  <option value="Chiapas">Chiapas</option>
+                                  <option value="Chihuahua">Chihuahua</option>
+                                  <option value="CDMX">Ciudad de México</option>
+                                  <option value="Coahuila">Coahuila</option>
+                                  <option value="Colima">Colima</option>
+                                  <option value="Durango">Durango</option>
+                                  <option value="Estado de México">Estado de México</option>
+                                  <option value="Guanajuato">Guanajuato</option>
+                                  <option value="Guerrero">Guerrero</option>
+                                  <option value="Hidalgo">Hidalgo</option>
+                                  <option value="Jalisco">Jalisco</option>
+                                  <option value="Michoacán">Michoacán</option>
+                                  <option value="Morelos">Morelos</option>
+                                  <option value="Nayarit">Nayarit</option>
+                                  <option value="Nuevo León">Nuevo León</option>
+                                  <option value="Oaxaca">Oaxaca</option>
+                                  <option value="Puebla">Puebla</option>
+                                  <option value="Querétaro">Querétaro</option>
+                                  <option value="Quintana Roo">Quintana Roo</option>
+                                  <option value="San Luis Potosí">San Luis Potosí</option>
+                                  <option value="Sinaloa">Sinaloa</option>
+                                  <option value="Sonora">Sonora</option>
+                                  <option value="Tabasco">Tabasco</option>
+                                  <option value="Tamaulipas">Tamaulipas</option>
+                                  <option value="Tlaxcala">Tlaxcala</option>
+                                  <option value="Veracruz">Veracruz</option>
+                                  <option value="Yucatán">Yucatán</option>
+                                  <option value="Zacatecas">Zacatecas</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                  Campo requerido
+                              </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="zip">CP</label>
+                              <input type="text" class="form-control" id="zip" placeholder="" required>
+                              <div class="invalid-feedback">
+                                  Campo requerido
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="align-content-center text-center">
+                    <button type="button" class="btn btn-primary">Ordenar Ahora</button>
+                  </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+
+    <!-- Importamos jquery para que se actualicen los datos usando javascript sin refrescar la pagina, y nuestro js para carrito-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='../js/carrito.js'></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#iniciar').click(function(){
+                $('.alert').show()
+            }) 
+        });
+    </script>
+</body>
+
+</html>
